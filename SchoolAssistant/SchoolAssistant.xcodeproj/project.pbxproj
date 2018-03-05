@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015A5EF3204D5BE00003A1FF /* LWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015A5EEF204D5BE00003A1FF /* LWNavigationController.m */; };
+		015A5EF4204D5BE00003A1FF /* LWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015A5EF2204D5BE00003A1FF /* LWTabBarController.m */; };
+		015A5EF7204D5BF30003A1FF /* LWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 015A5EF6204D5BF30003A1FF /* LWTabBar.m */; };
+		015A5F01204D5C210003A1FF /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 015A5EFA204D5C210003A1FF /* UIView+frame.m */; };
+		015A5F02204D5C210003A1FF /* UITextField+placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 015A5EFC204D5C210003A1FF /* UITextField+placeholder.m */; };
+		015A5F03204D5C210003A1FF /* UIImage+render.m in Sources */ = {isa = PBXBuildFile; fileRef = 015A5EFD204D5C210003A1FF /* UIImage+render.m */; };
+		015A5F04204D5C210003A1FF /* UIBarButtonItem+item.m in Sources */ = {isa = PBXBuildFile; fileRef = 015A5EFE204D5C210003A1FF /* UIBarButtonItem+item.m */; };
+		015A5F08204D5D820003A1FF /* LWStudyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015A5F07204D5D820003A1FF /* LWStudyController.m */; };
+		015A5F0B204D5DBC0003A1FF /* LWDiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015A5F0A204D5DBC0003A1FF /* LWDiscoverController.m */; };
+		015A5F0E204D5DDF0003A1FF /* LWContactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015A5F0D204D5DDF0003A1FF /* LWContactsController.m */; };
+		015A5F11204D5E000003A1FF /* LWMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015A5F10204D5E000003A1FF /* LWMeController.m */; };
+		015A5F14204D5E180003A1FF /* LWChatsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015A5F13204D5E180003A1FF /* LWChatsController.m */; };
 		01989299204D55DD00A8EFCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01989298204D55DD00A8EFCE /* Assets.xcassets */; };
 		0198929C204D55DD00A8EFCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0198929A204D55DD00A8EFCE /* LaunchScreen.storyboard */; };
 		019892C6204D57B500A8EFCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 019892B5204D57B500A8EFCE /* main.m */; };
@@ -14,6 +26,31 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		015A5EEF204D5BE00003A1FF /* LWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWNavigationController.m; sourceTree = "<group>"; };
+		015A5EF0204D5BE00003A1FF /* LWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWTabBarController.h; sourceTree = "<group>"; };
+		015A5EF1204D5BE00003A1FF /* LWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWNavigationController.h; sourceTree = "<group>"; };
+		015A5EF2204D5BE00003A1FF /* LWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWTabBarController.m; sourceTree = "<group>"; };
+		015A5EF5204D5BF30003A1FF /* LWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWTabBar.h; sourceTree = "<group>"; };
+		015A5EF6204D5BF30003A1FF /* LWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWTabBar.m; sourceTree = "<group>"; };
+		015A5EF9204D5C210003A1FF /* UIImage+render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+render.h"; sourceTree = "<group>"; };
+		015A5EFA204D5C210003A1FF /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		015A5EFB204D5C210003A1FF /* UIBarButtonItem+item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+item.h"; sourceTree = "<group>"; };
+		015A5EFC204D5C210003A1FF /* UITextField+placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+placeholder.m"; sourceTree = "<group>"; };
+		015A5EFD204D5C210003A1FF /* UIImage+render.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+render.m"; sourceTree = "<group>"; };
+		015A5EFE204D5C210003A1FF /* UIBarButtonItem+item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+item.m"; sourceTree = "<group>"; };
+		015A5EFF204D5C210003A1FF /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		015A5F00204D5C210003A1FF /* UITextField+placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+placeholder.h"; sourceTree = "<group>"; };
+		015A5F05204D5C5A0003A1FF /* lw.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lw.pch; sourceTree = "<group>"; };
+		015A5F06204D5D820003A1FF /* LWStudyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWStudyController.h; sourceTree = "<group>"; };
+		015A5F07204D5D820003A1FF /* LWStudyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWStudyController.m; sourceTree = "<group>"; };
+		015A5F09204D5DBC0003A1FF /* LWDiscoverController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWDiscoverController.h; sourceTree = "<group>"; };
+		015A5F0A204D5DBC0003A1FF /* LWDiscoverController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWDiscoverController.m; sourceTree = "<group>"; };
+		015A5F0C204D5DDF0003A1FF /* LWContactsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWContactsController.h; sourceTree = "<group>"; };
+		015A5F0D204D5DDF0003A1FF /* LWContactsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWContactsController.m; sourceTree = "<group>"; };
+		015A5F0F204D5E000003A1FF /* LWMeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWMeController.h; sourceTree = "<group>"; };
+		015A5F10204D5E000003A1FF /* LWMeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWMeController.m; sourceTree = "<group>"; };
+		015A5F12204D5E180003A1FF /* LWChatsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWChatsController.h; sourceTree = "<group>"; };
+		015A5F13204D5E180003A1FF /* LWChatsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWChatsController.m; sourceTree = "<group>"; };
 		0198928C204D55DD00A8EFCE /* SchoolAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01989298204D55DD00A8EFCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0198929B204D55DD00A8EFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +71,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		015A5EF8204D5C210003A1FF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				015A5EF9204D5C210003A1FF /* UIImage+render.h */,
+				015A5EFA204D5C210003A1FF /* UIView+frame.m */,
+				015A5EFB204D5C210003A1FF /* UIBarButtonItem+item.h */,
+				015A5EFC204D5C210003A1FF /* UITextField+placeholder.m */,
+				015A5EFD204D5C210003A1FF /* UIImage+render.m */,
+				015A5EFE204D5C210003A1FF /* UIBarButtonItem+item.m */,
+				015A5EFF204D5C210003A1FF /* UIView+frame.h */,
+				015A5F00204D5C210003A1FF /* UITextField+placeholder.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		01989283204D55DD00A8EFCE = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +141,8 @@
 		019892A7204D57B500A8EFCE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				015A5F06204D5D820003A1FF /* LWStudyController.h */,
+				015A5F07204D5D820003A1FF /* LWStudyController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -120,6 +174,8 @@
 		019892AB204D57B500A8EFCE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				015A5F09204D5DBC0003A1FF /* LWDiscoverController.h */,
+				015A5F0A204D5DBC0003A1FF /* LWDiscoverController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,6 +207,8 @@
 		019892AF204D57B500A8EFCE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				015A5F0C204D5DDF0003A1FF /* LWContactsController.h */,
+				015A5F0D204D5DDF0003A1FF /* LWContactsController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,9 +230,11 @@
 		019892B2204D57B500A8EFCE /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				019892B5204D57B500A8EFCE /* main.m */,
+				015A5EF8204D5C210003A1FF /* Category */,
 				019892B3204D57B500A8EFCE /* AppDelegate.h */,
 				019892B8204D57B500A8EFCE /* AppDelegate.m */,
+				019892B5204D57B500A8EFCE /* main.m */,
+				015A5F05204D5C5A0003A1FF /* lw.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -192,6 +252,8 @@
 		019892BA204D57B500A8EFCE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				015A5F0F204D5E000003A1FF /* LWMeController.h */,
+				015A5F10204D5E000003A1FF /* LWMeController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -223,6 +285,8 @@
 		019892BE204D57B500A8EFCE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				015A5F12204D5E180003A1FF /* LWChatsController.h */,
+				015A5F13204D5E180003A1FF /* LWChatsController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,6 +318,10 @@
 		019892C2204D57B500A8EFCE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				015A5EF1204D5BE00003A1FF /* LWNavigationController.h */,
+				015A5EEF204D5BE00003A1FF /* LWNavigationController.m */,
+				015A5EF0204D5BE00003A1FF /* LWTabBarController.h */,
+				015A5EF2204D5BE00003A1FF /* LWTabBarController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +336,8 @@
 		019892C4204D57B500A8EFCE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				015A5EF5204D5BF30003A1FF /* LWTabBar.h */,
+				015A5EF6204D5BF30003A1FF /* LWTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -349,8 +419,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015A5F01204D5C210003A1FF /* UIView+frame.m in Sources */,
+				015A5F02204D5C210003A1FF /* UITextField+placeholder.m in Sources */,
+				015A5EF7204D5BF30003A1FF /* LWTabBar.m in Sources */,
+				015A5F11204D5E000003A1FF /* LWMeController.m in Sources */,
+				015A5F14204D5E180003A1FF /* LWChatsController.m in Sources */,
+				015A5F0B204D5DBC0003A1FF /* LWDiscoverController.m in Sources */,
 				019892C7204D57B500A8EFCE /* AppDelegate.m in Sources */,
 				019892C6204D57B500A8EFCE /* main.m in Sources */,
+				015A5EF4204D5BE00003A1FF /* LWTabBarController.m in Sources */,
+				015A5F08204D5D820003A1FF /* LWStudyController.m in Sources */,
+				015A5EF3204D5BE00003A1FF /* LWNavigationController.m in Sources */,
+				015A5F04204D5C210003A1FF /* UIBarButtonItem+item.m in Sources */,
+				015A5F03204D5C210003A1FF /* UIImage+render.m in Sources */,
+				015A5F0E204D5DDF0003A1FF /* LWContactsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +560,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TT898TTE6L;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SchoolAssistant/Classes/Other/lw.pch;
 				INFOPLIST_FILE = SchoolAssistant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -493,6 +577,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TT898TTE6L;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SchoolAssistant/Classes/Other/lw.pch;
 				INFOPLIST_FILE = SchoolAssistant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

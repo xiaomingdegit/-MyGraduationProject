@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LWTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UIViewController *viewController = [[UIViewController alloc] init];
-    self.window.rootViewController = viewController;
+    LWTabBarController *tabBarController = [[LWTabBarController alloc] init];
+    self.window.rootViewController = tabBarController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
