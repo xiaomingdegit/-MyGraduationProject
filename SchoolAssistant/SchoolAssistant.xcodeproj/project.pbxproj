@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0107F8D5204D75FC00D36ADC /* LWNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0107F8D3204D75FC00D36ADC /* LWNetworkManager.m */; };
 		015A5EF3204D5BE00003A1FF /* LWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015A5EEF204D5BE00003A1FF /* LWNavigationController.m */; };
 		015A5EF4204D5BE00003A1FF /* LWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015A5EF2204D5BE00003A1FF /* LWTabBarController.m */; };
 		015A5EF7204D5BF30003A1FF /* LWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 015A5EF6204D5BF30003A1FF /* LWTabBar.m */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0107F8D3204D75FC00D36ADC /* LWNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWNetworkManager.m; sourceTree = "<group>"; };
+		0107F8D4204D75FC00D36ADC /* LWNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWNetworkManager.h; sourceTree = "<group>"; };
 		015A5EEF204D5BE00003A1FF /* LWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWNavigationController.m; sourceTree = "<group>"; };
 		015A5EF0204D5BE00003A1FF /* LWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWTabBarController.h; sourceTree = "<group>"; };
 		015A5EF1204D5BE00003A1FF /* LWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWNavigationController.h; sourceTree = "<group>"; };
@@ -352,6 +355,8 @@
 		019892C5204D57B500A8EFCE /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				0107F8D4204D75FC00D36ADC /* LWNetworkManager.h */,
+				0107F8D3204D75FC00D36ADC /* LWNetworkManager.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -505,6 +510,7 @@
 				015A5F0B204D5DBC0003A1FF /* LWDiscoverController.m in Sources */,
 				019892C7204D57B500A8EFCE /* AppDelegate.m in Sources */,
 				019892C6204D57B500A8EFCE /* main.m in Sources */,
+				0107F8D5204D75FC00D36ADC /* LWNetworkManager.m in Sources */,
 				015A5EF4204D5BE00003A1FF /* LWTabBarController.m in Sources */,
 				015A5F08204D5D820003A1FF /* LWStudyController.m in Sources */,
 				015A5EF3204D5BE00003A1FF /* LWNavigationController.m in Sources */,
