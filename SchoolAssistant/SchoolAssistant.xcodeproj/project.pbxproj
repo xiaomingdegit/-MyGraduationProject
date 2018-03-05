@@ -23,6 +23,7 @@
 		0198929C204D55DD00A8EFCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0198929A204D55DD00A8EFCE /* LaunchScreen.storyboard */; };
 		019892C6204D57B500A8EFCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 019892B5204D57B500A8EFCE /* main.m */; };
 		019892C7204D57B500A8EFCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 019892B8204D57B500A8EFCE /* AppDelegate.m */; };
+		8E32A43FEED483917F41311F /* libPods-SchoolAssistant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFBA6F7AF3F2640C02AD457 /* libPods-SchoolAssistant.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,9 @@
 		019892B3204D57B500A8EFCE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		019892B5204D57B500A8EFCE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		019892B8204D57B500A8EFCE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4B2DAA6147C1D7A70D86ED5D /* Pods-SchoolAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolAssistant/Pods-SchoolAssistant.release.xcconfig"; sourceTree = "<group>"; };
+		7CFBA6F7AF3F2640C02AD457 /* libPods-SchoolAssistant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SchoolAssistant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A48BBA43840CD98FB1B4B690 /* Pods-SchoolAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolAssistant/Pods-SchoolAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E32A43FEED483917F41311F /* libPods-SchoolAssistant.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +96,8 @@
 			children = (
 				0198928E204D55DD00A8EFCE /* SchoolAssistant */,
 				0198928D204D55DD00A8EFCE /* Products */,
+				B386A9030BAFE88C1A890D9A /* Pods */,
+				8013499939549C9ED62F199F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -349,6 +356,23 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		8013499939549C9ED62F199F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CFBA6F7AF3F2640C02AD457 /* libPods-SchoolAssistant.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B386A9030BAFE88C1A890D9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A48BBA43840CD98FB1B4B690 /* Pods-SchoolAssistant.debug.xcconfig */,
+				4B2DAA6147C1D7A70D86ED5D /* Pods-SchoolAssistant.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,9 +380,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 019892A2204D55DD00A8EFCE /* Build configuration list for PBXNativeTarget "SchoolAssistant" */;
 			buildPhases = (
+				A46BB316DA3F98C97B1D02D3 /* [CP] Check Pods Manifest.lock */,
 				01989288204D55DD00A8EFCE /* Sources */,
 				01989289204D55DD00A8EFCE /* Frameworks */,
 				0198928A204D55DD00A8EFCE /* Resources */,
+				B12B93415F72C83EAA59DCB0 /* [CP] Embed Pods Frameworks */,
+				F64A1FBA715CB1B444715404 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -413,6 +440,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A46BB316DA3F98C97B1D02D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SchoolAssistant-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B12B93415F72C83EAA59DCB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SchoolAssistant/Pods-SchoolAssistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F64A1FBA715CB1B444715404 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SchoolAssistant/Pods-SchoolAssistant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01989288204D55DD00A8EFCE /* Sources */ = {
@@ -556,6 +634,7 @@
 		};
 		019892A3204D55DD00A8EFCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A48BBA43840CD98FB1B4B690 /* Pods-SchoolAssistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -573,6 +652,7 @@
 		};
 		019892A4204D55DD00A8EFCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B2DAA6147C1D7A70D86ED5D /* Pods-SchoolAssistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
