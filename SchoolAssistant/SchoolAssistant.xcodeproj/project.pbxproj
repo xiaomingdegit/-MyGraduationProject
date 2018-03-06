@@ -25,6 +25,10 @@
 		019892C6204D57B500A8EFCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 019892B5204D57B500A8EFCE /* main.m */; };
 		019892C7204D57B500A8EFCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 019892B8204D57B500A8EFCE /* AppDelegate.m */; };
 		8E32A43FEED483917F41311F /* libPods-SchoolAssistant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFBA6F7AF3F2640C02AD457 /* libPods-SchoolAssistant.a */; };
+		FA306873204E19170068963B /* ZSKStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA306872204E19170068963B /* ZSKStartViewController.m */; };
+		FACEBDA8204E1FB900B21E7F /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FACEBDA7204E1FB800B21E7F /* 1.mp4 */; };
+		FACEBDAB204E21A700B21E7F /* ZSKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FACEBDAA204E21A700B21E7F /* ZSKLoginViewController.m */; };
+		FACEBDAE204E21B500B21E7F /* ZSKRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FACEBDAD204E21B500B21E7F /* ZSKRegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +69,13 @@
 		4B2DAA6147C1D7A70D86ED5D /* Pods-SchoolAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolAssistant/Pods-SchoolAssistant.release.xcconfig"; sourceTree = "<group>"; };
 		7CFBA6F7AF3F2640C02AD457 /* libPods-SchoolAssistant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SchoolAssistant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48BBA43840CD98FB1B4B690 /* Pods-SchoolAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolAssistant/Pods-SchoolAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		FA306871204E19170068963B /* ZSKStartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKStartViewController.h; sourceTree = "<group>"; };
+		FA306872204E19170068963B /* ZSKStartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKStartViewController.m; sourceTree = "<group>"; };
+		FACEBDA7204E1FB800B21E7F /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
+		FACEBDA9204E21A700B21E7F /* ZSKLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKLoginViewController.h; sourceTree = "<group>"; };
+		FACEBDAA204E21A700B21E7F /* ZSKLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKLoginViewController.m; sourceTree = "<group>"; };
+		FACEBDAC204E21B500B21E7F /* ZSKRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSKRegisterViewController.h; sourceTree = "<group>"; };
+		FACEBDAD204E21B500B21E7F /* ZSKRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSKRegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +137,7 @@
 		019892A5204D57B500A8EFCE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FA306870204E18E50068963B /* Login */,
 				019892A6204D57B500A8EFCE /* Study */,
 				019892AA204D57B500A8EFCE /* Discover */,
 				019892AE204D57B500A8EFCE /* Contacts */,
@@ -240,6 +252,7 @@
 		019892B2204D57B500A8EFCE /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				FACEBDA6204E1FA200B21E7F /* Resource */,
 				015A5EF8204D5C210003A1FF /* Category */,
 				019892B3204D57B500A8EFCE /* AppDelegate.h */,
 				019892B8204D57B500A8EFCE /* AppDelegate.m */,
@@ -378,6 +391,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FA306870204E18E50068963B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FA306871204E19170068963B /* ZSKStartViewController.h */,
+				FA306872204E19170068963B /* ZSKStartViewController.m */,
+				FACEBDA9204E21A700B21E7F /* ZSKLoginViewController.h */,
+				FACEBDAA204E21A700B21E7F /* ZSKLoginViewController.m */,
+				FACEBDAC204E21B500B21E7F /* ZSKRegisterViewController.h */,
+				FACEBDAD204E21B500B21E7F /* ZSKRegisterViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FACEBDA6204E1FA200B21E7F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FACEBDA7204E1FB800B21E7F /* 1.mp4 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -439,6 +473,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACEBDA8204E1FB900B21E7F /* 1.mp4 in Resources */,
 				0198929C204D55DD00A8EFCE /* LaunchScreen.storyboard in Resources */,
 				01989299204D55DD00A8EFCE /* Assets.xcassets in Resources */,
 			);
@@ -506,10 +541,13 @@
 				015A5F02204D5C210003A1FF /* UITextField+placeholder.m in Sources */,
 				015A5EF7204D5BF30003A1FF /* LWTabBar.m in Sources */,
 				015A5F11204D5E000003A1FF /* LWMeController.m in Sources */,
+				FACEBDAE204E21B500B21E7F /* ZSKRegisterViewController.m in Sources */,
 				015A5F14204D5E180003A1FF /* LWChatsController.m in Sources */,
 				015A5F0B204D5DBC0003A1FF /* LWDiscoverController.m in Sources */,
+				FACEBDAB204E21A700B21E7F /* ZSKLoginViewController.m in Sources */,
 				019892C7204D57B500A8EFCE /* AppDelegate.m in Sources */,
 				019892C6204D57B500A8EFCE /* main.m in Sources */,
+				FA306873204E19170068963B /* ZSKStartViewController.m in Sources */,
 				0107F8D5204D75FC00D36ADC /* LWNetworkManager.m in Sources */,
 				015A5EF4204D5BE00003A1FF /* LWTabBarController.m in Sources */,
 				015A5F08204D5D820003A1FF /* LWStudyController.m in Sources */,

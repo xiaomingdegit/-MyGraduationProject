@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LWTabBarController.h"
+#import "ZSKStartViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,8 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    LWTabBarController *tabBarController = [[LWTabBarController alloc] init];
-    self.window.rootViewController = tabBarController;
+    self.window.rootViewController = [ZSKStartViewController new];
     [self.window makeKeyAndVisible];
     return YES;
 }
