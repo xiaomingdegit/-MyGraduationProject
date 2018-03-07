@@ -8,8 +8,7 @@
 
 #import "ZSKStartViewController.h"
 #import <Masonry.h>
-#import "ZSKLoginViewController.h"
-#import "ZSKRegisterViewController.h"
+#import "LWLoginRegisterController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
 
@@ -160,22 +159,23 @@
 
 //按钮点击事件
 -(void)buttonClick:(UIButton *)button {
-    [UIView animateWithDuration:1 animations:^{
-        button.transform = CGAffineTransformMakeScale(1.1, 1.1);
-        self.view.alpha = 0.0;
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.5 animations:^{
-            button.transform = CGAffineTransformIdentity;
-            
+//    [UIView animateWithDuration:1 animations:^{
+//        button.transform = CGAffineTransformMakeScale(1.1, 1.1);
+//        self.view.alpha = 0.0;
+//    } completion:^(BOOL finished) {
+//        [UIView animateWithDuration:0.5 animations:^{
+//            button.transform = CGAffineTransformIdentity;
+    
             if (button.tag == 1) {
-                [UIApplication sharedApplication].keyWindow.rootViewController = [ZSKLoginViewController new];
+                [self presentViewController:[LWLoginRegisterController new] animated:YES completion:nil];
                 NSLog(@"login....");
             }else {
-                [UIApplication sharedApplication].keyWindow.rootViewController = [ZSKRegisterViewController new];
+                
+                [self presentViewController:[LWLoginRegisterController new]  animated:YES completion:nil];
                 NSLog(@"register.....");
             }
-        }];
-    }];
+//        }];
+//    }];
 }
 
 //pageControl改变事件
