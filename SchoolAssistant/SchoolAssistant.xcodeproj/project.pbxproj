@@ -24,10 +24,7 @@
 		01D23E482050041400FE9594 /* LWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D23E292050041300FE9594 /* LWTabBarController.m */; };
 		01D23E492050041400FE9594 /* LWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D23E2A2050041300FE9594 /* LWNavigationController.m */; };
 		01D23E4A2050041400FE9594 /* LWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D23E2F2050041300FE9594 /* LWTabBar.m */; };
-		01D23E4E2050041400FE9594 /* LWNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D23E3A2050041300FE9594 /* LWNetworkManager.m */; };
 		01D23E5A205004CF00FE9594 /* ZSKStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D23E55205004CE00FE9594 /* ZSKStartViewController.m */; };
-		01D23E5F205005D500FE9594 /* LWLoginRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01D23E5D205005D400FE9594 /* LWLoginRegisterController.xib */; };
-		01D23E60205005D500FE9594 /* LWLoginRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D23E5E205005D500FE9594 /* LWLoginRegisterController.m */; };
 		01D23E6B205005E600FE9594 /* LWFastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D23E62205005E500FE9594 /* LWFastLoginView.m */; };
 		01D23E6C205005E600FE9594 /* LWFastLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D23E63205005E500FE9594 /* LWFastLoginButton.m */; };
 		01D23E6D205005E600FE9594 /* LWFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01D23E67205005E500FE9594 /* LWFastLoginView.xib */; };
@@ -35,6 +32,10 @@
 		01D23E6F205005E600FE9594 /* LWLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D23E69205005E600FE9594 /* LWLoginRegisterView.m */; };
 		01D23E70205005E600FE9594 /* LWLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01D23E6A205005E600FE9594 /* LWLoginRegisterView.xib */; };
 		8E32A43FEED483917F41311F /* libPods-SchoolAssistant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFBA6F7AF3F2640C02AD457 /* libPods-SchoolAssistant.a */; };
+		FAF58BA3205166F500CE932E /* logoo.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF58BA2205166F500CE932E /* logoo.png */; };
+		FAF58BA82051671F00CE932E /* ZSKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF58BA42051671E00CE932E /* ZSKLoginViewController.m */; };
+		FAF58BA92051671F00CE932E /* ZSKRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF58BA72051671E00CE932E /* ZSKRegisterViewController.m */; };
+		FAF58BAC2051679E00CE932E /* ZSKNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF58BAA2051679E00CE932E /* ZSKNetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,13 +72,8 @@
 		01D23E2C2050041300FE9594 /* LWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWNavigationController.h; sourceTree = "<group>"; };
 		01D23E2F2050041300FE9594 /* LWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWTabBar.m; sourceTree = "<group>"; };
 		01D23E302050041300FE9594 /* LWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWTabBar.h; sourceTree = "<group>"; };
-		01D23E3A2050041300FE9594 /* LWNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWNetworkManager.m; sourceTree = "<group>"; };
-		01D23E3B2050041300FE9594 /* LWNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWNetworkManager.h; sourceTree = "<group>"; };
 		01D23E53205004CE00FE9594 /* ZSKStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKStartViewController.h; sourceTree = "<group>"; };
 		01D23E55205004CE00FE9594 /* ZSKStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKStartViewController.m; sourceTree = "<group>"; };
-		01D23E5C205005D400FE9594 /* LWLoginRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWLoginRegisterController.h; sourceTree = "<group>"; };
-		01D23E5D205005D400FE9594 /* LWLoginRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LWLoginRegisterController.xib; sourceTree = "<group>"; };
-		01D23E5E205005D500FE9594 /* LWLoginRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWLoginRegisterController.m; sourceTree = "<group>"; };
 		01D23E61205005E500FE9594 /* LWLoginRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWLoginRegisterView.h; sourceTree = "<group>"; };
 		01D23E62205005E500FE9594 /* LWFastLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWFastLoginView.m; sourceTree = "<group>"; };
 		01D23E63205005E500FE9594 /* LWFastLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWFastLoginButton.m; sourceTree = "<group>"; };
@@ -91,6 +87,13 @@
 		4B2DAA6147C1D7A70D86ED5D /* Pods-SchoolAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolAssistant/Pods-SchoolAssistant.release.xcconfig"; sourceTree = "<group>"; };
 		7CFBA6F7AF3F2640C02AD457 /* libPods-SchoolAssistant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SchoolAssistant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48BBA43840CD98FB1B4B690 /* Pods-SchoolAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolAssistant/Pods-SchoolAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		FAF58BA2205166F500CE932E /* logoo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoo.png; sourceTree = "<group>"; };
+		FAF58BA42051671E00CE932E /* ZSKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKLoginViewController.m; sourceTree = "<group>"; };
+		FAF58BA52051671E00CE932E /* ZSKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKLoginViewController.h; sourceTree = "<group>"; };
+		FAF58BA62051671E00CE932E /* ZSKRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKRegisterViewController.h; sourceTree = "<group>"; };
+		FAF58BA72051671E00CE932E /* ZSKRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKRegisterViewController.m; sourceTree = "<group>"; };
+		FAF58BAA2051679E00CE932E /* ZSKNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKNetworkManager.m; sourceTree = "<group>"; };
+		FAF58BAB2051679E00CE932E /* ZSKNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKNetworkManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,7 @@
 		0198928E204D55DD00A8EFCE /* SchoolAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				FAF58BA1205166F500CE932E /* Resources */,
 				01D23DF82050041300FE9594 /* Classes */,
 				01989298204D55DD00A8EFCE /* Assets.xcassets */,
 				0198929A204D55DD00A8EFCE /* LaunchScreen.storyboard */,
@@ -391,8 +395,8 @@
 		01D23E392050041300FE9594 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				01D23E3A2050041300FE9594 /* LWNetworkManager.m */,
-				01D23E3B2050041300FE9594 /* LWNetworkManager.h */,
+				FAF58BAB2051679E00CE932E /* ZSKNetworkManager.h */,
+				FAF58BAA2051679E00CE932E /* ZSKNetworkManager.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -410,11 +414,12 @@
 		01D23E50205004CE00FE9594 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FAF58BA52051671E00CE932E /* ZSKLoginViewController.h */,
+				FAF58BA42051671E00CE932E /* ZSKLoginViewController.m */,
+				FAF58BA62051671E00CE932E /* ZSKRegisterViewController.h */,
+				FAF58BA72051671E00CE932E /* ZSKRegisterViewController.m */,
 				01D23E53205004CE00FE9594 /* ZSKStartViewController.h */,
 				01D23E55205004CE00FE9594 /* ZSKStartViewController.m */,
-				01D23E5C205005D400FE9594 /* LWLoginRegisterController.h */,
-				01D23E5E205005D500FE9594 /* LWLoginRegisterController.m */,
-				01D23E5D205005D400FE9594 /* LWLoginRegisterController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -458,6 +463,14 @@
 				4B2DAA6147C1D7A70D86ED5D /* Pods-SchoolAssistant.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FAF58BA1205166F500CE932E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAF58BA2205166F500CE932E /* logoo.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -523,10 +536,10 @@
 			files = (
 				01D23E452050041400FE9594 /* 1.mp4 in Resources */,
 				0198929C204D55DD00A8EFCE /* LaunchScreen.storyboard in Resources */,
+				FAF58BA3205166F500CE932E /* logoo.png in Resources */,
 				01D23E70205005E600FE9594 /* LWLoginRegisterView.xib in Resources */,
 				01989299204D55DD00A8EFCE /* Assets.xcassets in Resources */,
 				01D23E6D205005E600FE9594 /* LWFastLoginView.xib in Resources */,
-				01D23E5F205005D500FE9594 /* LWLoginRegisterController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,7 +605,7 @@
 				01D23E3F2050041300FE9594 /* UIView+frame.m in Sources */,
 				01D23E4A2050041400FE9594 /* LWTabBar.m in Sources */,
 				01D23E6F205005E600FE9594 /* LWLoginRegisterView.m in Sources */,
-				01D23E60205005D500FE9594 /* LWLoginRegisterController.m in Sources */,
+				FAF58BA92051671F00CE932E /* ZSKRegisterViewController.m in Sources */,
 				01D23E492050041400FE9594 /* LWNavigationController.m in Sources */,
 				01D23E482050041400FE9594 /* LWTabBarController.m in Sources */,
 				01D23E3C2050041300FE9594 /* LWStudyController.m in Sources */,
@@ -600,13 +613,14 @@
 				01D23E3D2050041300FE9594 /* LWDiscoverController.m in Sources */,
 				01D23E462050041400FE9594 /* LWMeController.m in Sources */,
 				01D23E6E205005E600FE9594 /* LWLoginRegisterField.m in Sources */,
-				01D23E4E2050041400FE9594 /* LWNetworkManager.m in Sources */,
 				01D23E412050041300FE9594 /* UIImage+render.m in Sources */,
+				FAF58BAC2051679E00CE932E /* ZSKNetworkManager.m in Sources */,
 				01D23E422050041300FE9594 /* UIBarButtonItem+item.m in Sources */,
 				01D23E6C205005E600FE9594 /* LWFastLoginButton.m in Sources */,
 				01D23E3E2050041300FE9594 /* LWContactsController.m in Sources */,
 				01D23E5A205004CF00FE9594 /* ZSKStartViewController.m in Sources */,
 				01D23E6B205005E600FE9594 /* LWFastLoginView.m in Sources */,
+				FAF58BA82051671F00CE932E /* ZSKLoginViewController.m in Sources */,
 				01D23E432050041300FE9594 /* main.m in Sources */,
 				01D23E402050041300FE9594 /* UITextField+placeholder.m in Sources */,
 			);
