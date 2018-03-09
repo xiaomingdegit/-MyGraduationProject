@@ -10,6 +10,7 @@
 #import <Masonry.h>
 #import "LWTabBarController.h"
 #import "ZSKNetworkManager.h"
+#import "ZSKLoginButton.h"
 
 
 @interface ZSKLoginViewController ()<UITextFieldDelegate>
@@ -17,7 +18,7 @@
 @property(nonatomic,strong)UIImageView *bgView;//background view
 @property(nonatomic,strong)UIView *contentView;//内容视图
 
-@property(nonatomic,strong)UIButton *buttonLogin;//登录按钮
+@property(nonatomic,strong)ZSKLoginButton *buttonLogin;//登录按钮
 @property(nonatomic,strong)UIButton *buttonRegister;//注册按钮
 @property(nonatomic,strong)UIButton *buttonReset;//重新输入
 
@@ -90,12 +91,6 @@ static const CGFloat kTFLeftH = 20.f;
     return _fieldPassword;
 }
 
-- (UIButton *)buttonLogin{
-    if (!_buttonLogin) {
-        _buttonLogin = [UIButton buttonWithType:UIButtonTypeCustom];
-    }
-    return _buttonLogin;
-}
 
 
 - (UIButton *)buttonRegister{
@@ -194,14 +189,20 @@ static const CGFloat kTFLeftH = 20.f;
     self.passwordLine = passwordLine;
     [self.fieldPassword addSubview:passwordLine];
     
-    //登录按钮
-    self.buttonLogin.layer.cornerRadius = 8.f;
-    self.buttonLogin.layer.masksToBounds = YES;
-    self.buttonLogin.layer.borderWidth = 1.f;
-    self.buttonLogin.layer.borderColor = [UIColor whiteColor].CGColor;
-    self.buttonLogin.titleLabel.font = [UIFont systemFontOfSize:kLoginFontSize];
-    [self.buttonLogin addTarget:self action:@selector(loginAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.buttonLogin setTitle:@"登录" forState:UIControlStateNormal];
+    
+    ZSKLoginButton *login = [[ZSKLoginButton alloc]initWithFrame:CGRectMake(0, 0, kMaxW, 44)];
+    login.center = CGPointMake(self.view.center.x, self.view.center.y + 60);
+    self.buttonLogin = login;
+    __block ZSKLoginButton *button = login;
+    
+    login.translateBlock = ^{
+        NSLog(@"跳转了哦");
+        button.bounds = CGRectMake(0, 0, 44, 44);
+        button.layer.cornerRadius = 22;
+        
+        [UIApplication sharedApplication].keyWindow.rootViewController = [LWTabBarController new];
+    };
+    
     [self.contentView addSubview:self.buttonLogin];
     
     //注册按钮
@@ -264,12 +265,12 @@ static const CGFloat kTFLeftH = 20.f;
         make.height.mas_equalTo(.5f);
     }];
     
-    [self.buttonLogin mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo(kMaxW);
-        make.height.mas_equalTo(kTextFieldH);
-        make.centerX.mas_equalTo(self.contentView);
-        make.top.mas_equalTo(self.fieldPassword.mas_bottom).with.offset(kMarginY20);
-    }];
+//    [self.buttonLogin mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.width.mas_equalTo(kMaxW);
+//        make.height.mas_equalTo(kTextFieldH);
+//        make.centerX.mas_equalTo(self.contentView);
+//        make.top.mas_equalTo(self.fieldPassword.mas_bottom).with.offset(kMarginY20);
+//    }];
     
     [self.buttonRegister mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.buttonLogin);
