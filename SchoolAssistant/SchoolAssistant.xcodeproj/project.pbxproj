@@ -355,10 +355,10 @@
 		01D23E282050041300FE9594 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				01D23E292050041300FE9594 /* LWTabBarController.m */,
-				01D23E2A2050041300FE9594 /* LWNavigationController.m */,
 				01D23E2B2050041300FE9594 /* LWTabBarController.h */,
+				01D23E292050041300FE9594 /* LWTabBarController.m */,
 				01D23E2C2050041300FE9594 /* LWNavigationController.h */,
+				01D23E2A2050041300FE9594 /* LWNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

@@ -71,7 +71,8 @@
 - (UIViewController *)controllerWithInfo:(NSDictionary *)info{
     Class cls = NSClassFromString(info[@"controllerName"]);
     UIViewController *viewController = [[cls alloc] init];
-    viewController.tabBarItem.title = info[@"title"];
+   // viewController.tabBarItem.title = info[@"title"];
+    viewController.title = info[@"title"];
     viewController.tabBarItem.image = [UIImage imageNamed:info[@"imageName"]];
     //设置tabBar选中图片
     viewController.tabBarItem.selectedImage = [UIImage imageOriginalNamed:info[@"clickImageName"]];
@@ -79,7 +80,6 @@
     [viewController.tabBarItem setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]} forState:UIControlStateNormal];
     //设置tabBarItem字体颜色
     [viewController.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateSelected];
-    
     return [[LWNavigationController alloc] initWithRootViewController:viewController];
 }
 

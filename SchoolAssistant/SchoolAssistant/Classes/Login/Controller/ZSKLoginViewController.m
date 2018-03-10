@@ -35,6 +35,7 @@
 
 
 static const CGFloat kMaxW = 280.f;
+static const CGFloat kMaxH = 44.f;
 static const CGFloat kMarginY10 = 10.f;
 static const CGFloat kMarginY20 = 20.f;
 static const CGFloat kBtnH = 40.f;
@@ -111,7 +112,6 @@ static const CGFloat kTFLeftH = 20.f;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self initUI];
     // Do any additional setup after loading the view.
     
@@ -125,11 +125,10 @@ static const CGFloat kTFLeftH = 20.f;
                 make.right.equalTo(self.view.mas_right);
                 make.bottom.equalTo(self.view.mas_bottom).offset(-23);
             }];
-            
+
             [self.fieldAccount becomeFirstResponder];
         });
     }];
-    
     
 }
 
@@ -190,8 +189,8 @@ static const CGFloat kTFLeftH = 20.f;
     [self.fieldPassword addSubview:passwordLine];
     
     
-    ZSKLoginButton *login = [[ZSKLoginButton alloc]initWithFrame:CGRectMake(0, 0, kMaxW, 44)];
-    login.center = CGPointMake(self.view.center.x, self.view.center.y + 60);
+    ZSKLoginButton *login = [[ZSKLoginButton alloc]initWithFrame:CGRectMake(self.view.center.x - kMaxW / 2, self.view.center.y + 60 - kMaxH / 2, kMaxW, kMaxH)];
+    //login.center = CGPointMake(self.view.center.x, );
     self.buttonLogin = login;
     __block ZSKLoginButton *button = login;
     
@@ -331,7 +330,6 @@ static const CGFloat kTFLeftH = 20.f;
 - (void)tapAction{
     [self hideKeyboard];
 //    [self.fieldAccount resignFirstResponder];
-    
 }
 
 //隐藏键盘
@@ -381,6 +379,7 @@ static const CGFloat kTFLeftH = 20.f;
 
 -(void)dealloc {
     NSLog(@"%@ 销毁了。。。",[self class]);
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end
