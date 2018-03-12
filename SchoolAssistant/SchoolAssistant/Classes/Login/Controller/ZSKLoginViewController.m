@@ -113,23 +113,10 @@ static const CGFloat kTFLeftH = 20.f;
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initUI];
-    // Do any additional setup after loading the view.
     
-    
-    
-    [UIView animateWithDuration:4.0 animations:^{
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.left.equalTo(self.view.mas_left);
-                make.top.equalTo(self.view.mas_top).offset(-23);
-                make.right.equalTo(self.view.mas_right);
-                make.bottom.equalTo(self.view.mas_bottom).offset(-23);
-            }];
+    [self.fieldAccount becomeFirstResponder];
 
-            [self.fieldAccount becomeFirstResponder];
-        });
-    }];
-    
+    [self addObservers];
 }
 
 //初始化界面
@@ -338,6 +325,7 @@ static const CGFloat kTFLeftH = 20.f;
 }
 
 - (void)addObservers{
+    NSLog(@"aaaa");
     //监听当键盘将要出现时
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     //监听当键将要退出时
@@ -348,22 +336,23 @@ static const CGFloat kTFLeftH = 20.f;
 - (void)keyboardWillShow:(NSNotification *)notif {
     //获取键盘的高度
     NSDictionary *userInfo = [notif userInfo];
-    NSValue *value = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
-    CGRect keyboardRect = [value CGRectValue];
-    CGFloat height = keyboardRect.size.height;
-    CGFloat passwordMaxY = CGRectGetMaxY(self.fieldPassword.frame);
-    CGFloat bgMaxY = CGRectGetMaxY(self.bgView.frame);
-    CGFloat subHeight = height - (bgMaxY - passwordMaxY)+10;//10为缓冲距离
+//    NSValue *value = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
+//    CGRect keyboardRect = [value CGRectValue];
+//    CGFloat height = keyboardRect.size.height;
+//    CGFloat passwordMaxY = CGRectGetMaxY(self.fieldPassword.frame);
+//    CGFloat bgMaxY = CGRectGetMaxY(self.bgView.frame);
+//    CGFloat subHeight = height - (bgMaxY - passwordMaxY);//10为缓冲距离
+////    NSLog(@"%@",[self.buttonReset.ma);
+//    NSLog(@"%f--%f--%f",height,bgMaxY,passwordMaxY);
     
     //获取键盘动画时长
     CGFloat dutation = [[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
     
     //键盘遮挡才需上移
-    if(subHeight>0){
-        [UIView animateWithDuration:dutation animations:^{
-            self.bgView.transform = CGAffineTransformMakeTranslation(0, - subHeight);
-        }];
-    }
+    [UIView animateWithDuration:dutation animations:^{
+        self.bgView.transform = CGAffineTransformMakeTranslation(0,  -23);
+    }];
+
 }
 
 //键盘将消失
