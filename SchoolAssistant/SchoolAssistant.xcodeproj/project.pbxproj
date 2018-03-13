@@ -27,7 +27,7 @@
 		01D23E5A205004CF00FE9594 /* ZSKStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D23E55205004CE00FE9594 /* ZSKStartViewController.m */; };
 		8E32A43FEED483917F41311F /* libPods-SchoolAssistant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFBA6F7AF3F2640C02AD457 /* libPods-SchoolAssistant.a */; };
 		FA05C479205283F400247C62 /* ZSKLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA05C478205283F400247C62 /* ZSKLoginButton.m */; };
-		FAF58BA3205166F500CE932E /* logoo.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF58BA2205166F500CE932E /* logoo.png */; };
+		FABED3532057651600393066 /* logoo.png in Resources */ = {isa = PBXBuildFile; fileRef = FABED3522057651600393066 /* logoo.png */; };
 		FAF58BA82051671F00CE932E /* ZSKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF58BA42051671E00CE932E /* ZSKLoginViewController.m */; };
 		FAF58BA92051671F00CE932E /* ZSKRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF58BA72051671E00CE932E /* ZSKRegisterViewController.m */; };
 		FAF58BAC2051679E00CE932E /* ZSKNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF58BAA2051679E00CE932E /* ZSKNetworkManager.m */; };
@@ -74,7 +74,7 @@
 		A48BBA43840CD98FB1B4B690 /* Pods-SchoolAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolAssistant/Pods-SchoolAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 		FA05C477205283F400247C62 /* ZSKLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKLoginButton.h; sourceTree = "<group>"; };
 		FA05C478205283F400247C62 /* ZSKLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKLoginButton.m; sourceTree = "<group>"; };
-		FAF58BA2205166F500CE932E /* logoo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoo.png; sourceTree = "<group>"; };
+		FABED3522057651600393066 /* logoo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoo.png; sourceTree = "<group>"; };
 		FAF58BA42051671E00CE932E /* ZSKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKLoginViewController.m; sourceTree = "<group>"; };
 		FAF58BA52051671E00CE932E /* ZSKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKLoginViewController.h; sourceTree = "<group>"; };
 		FAF58BA62051671E00CE932E /* ZSKRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKRegisterViewController.h; sourceTree = "<group>"; };
@@ -447,7 +447,7 @@
 		FAF58BA1205166F500CE932E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FAF58BA2205166F500CE932E /* logoo.png */,
+				FABED3522057651600393066 /* logoo.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -513,9 +513,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABED3532057651600393066 /* logoo.png in Resources */,
 				01D23E452050041400FE9594 /* 1.mp4 in Resources */,
 				0198929C204D55DD00A8EFCE /* LaunchScreen.storyboard in Resources */,
-				FAF58BA3205166F500CE932E /* logoo.png in Resources */,
 				01989299204D55DD00A8EFCE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

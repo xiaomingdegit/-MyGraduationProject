@@ -11,6 +11,7 @@
 #import "LWTabBarController.h"
 #import "ZSKNetworkManager.h"
 #import "ZSKLoginButton.h"
+#import "lw.pch"
 
 
 @interface ZSKLoginViewController ()<UITextFieldDelegate>
@@ -33,17 +34,6 @@
 
 @end
 
-
-static const CGFloat kMaxW = 280.f;
-static const CGFloat kMaxH = 44.f;
-static const CGFloat kMarginY10 = 10.f;
-static const CGFloat kMarginY20 = 20.f;
-static const CGFloat kBtnH = 40.f;
-static const CGFloat kTextFieldH = 40.f;
-static const CGFloat kLoginFontSize = 16.f;
-static const CGFloat kOtherFontSize = 14.f;
-static const CGFloat kTFLeftW = 30.f;
-static const CGFloat kTFLeftH = 20.f;
 
 
 @implementation ZSKLoginViewController
